@@ -1,0 +1,16 @@
+data = {
+    "India": 1417,
+    "China": 1402,
+    "USA": 331,
+    "Indonesia": 273,
+    "Pakistan": 231,
+    "Brazil": 213,
+    "Nigeria": 211,
+    "Bangladesh": 169,
+    "Russia": 146,
+    "Mexico": 126
+}
+print("Population Bar Chart (in millions)\n")
+for country, population in data.items():
+    bar = '█' * (population // 10)  # Scale for display
+    print(f"{country:<12} | {bar} {population}M")
